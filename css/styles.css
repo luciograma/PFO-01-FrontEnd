@@ -23,8 +23,12 @@ header {
 }
 
 nav {
+    position: sticky;
+    top: 0;
+    z-index: 999;
     background-color: #1a252f;
     padding: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 nav ul {
@@ -62,7 +66,8 @@ h2 {
     padding-bottom: 5px;
 }
 
-#tarjetas .contenedor-grid {
+#tarjetas .contenedor-grid,
+#peliculas .contenedor-grid {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -89,6 +94,9 @@ h2 {
 .tarjeta img {
     border-radius: 5px;
     margin-bottom: 10px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
 }
 
 table {
@@ -108,7 +116,7 @@ table th {
     color: white;
 }
 
-input, button {
+input, textarea, button {
     display: block;
     width: 100%;
     margin-bottom: 15px;
@@ -116,6 +124,13 @@ input, button {
     border-radius: 4px;
     border: 1px solid #ccc;
     box-sizing: border-box;
+}
+
+textarea {
+    height: 160px;
+    min-height: 120px;
+    max-height: 250px;
+    resize: vertical;
 }
 
 button {
@@ -135,6 +150,35 @@ button:hover {
 img {
     max-width: 100%;
     height: auto;
+}
+
+.avatar-img {
+    float: right;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 3px solid var(--color-secundario);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    object-fit: cover;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.avatar-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(52, 152, 219, 0.3);
+}
+
+/* Responsive para el avatar */
+@media (max-width: 768px) {
+    .avatar-img {
+        float: none;
+        display: block;
+        margin: 0 auto 20px;
+        width: 120px;
+        height: 120px;
+    }
 }
 
 footer {

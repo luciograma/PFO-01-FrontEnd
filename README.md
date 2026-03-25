@@ -49,7 +49,7 @@ Respuesta: ________________________________________________________
 
 • Consideraciones Adicionales:
 [ ] El diseño es responsivo y se visualiza correctamente en distintos dispositivos.
-[ ] Se aplicaron buenas prácticas de accesibilidad (por ejemplo, uso adecuado de atributos alt en
+[X] Se aplicaron buenas prácticas de accesibilidad (por ejemplo, uso adecuado de atributos alt en
 las imágenes).
 [ ] Se añadieron comentarios adicionales donde se describan decisiones de diseño o la lógica de
 implementación.

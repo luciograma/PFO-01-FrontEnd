@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio Personal - Lucio Gramaccioni</title>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -14,129 +13,138 @@
 </head>
 
 <body>
-
-    <header>
-        <h1>Portafolio Personal - Lucio Gramaccioni</h1>
+        <header>
+            <h1>Portafolio Personal - Lucio Gramaccioni</h1>
+        </header>
+        <!-- El siguiente bloque corresponde al navbar que linkea de forma directa las diferentes secciones por medio del id de cada una.
+            Los atributos "position: sticky" y "top: 0" en styles permiten que sea siempre visible en el margen superior de la pantalla al scrollear.-->
         <nav>
             <ul>
                 <li><a href="#sobre-mi">Sobre mí</a></li>
                 <li><a href="#tarjetas">Proyectos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
                 <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#peliculas">Peliculas</a></li>
             </ul>
         </nav>
-    </header>
+        <main>
+            <section id="sobre-mi">
+                <h2>Presentación Personal</h2>
+                <img src="img/avatarBH.png" alt="Avatar" class="avatar-img">
+                <p>Músico y Desarrollador Web FullStack de la ciudad de Rosario. <br>
+                   Guitarrista y cantante de las bandas "Duplo la Dúa" y "Bluzzarella Blues". <br>
+                   Trabajando en ASJ Servicios desde junio del 2022 con tecnologias como Java, Oracle BPM12 y Angular JS.</p>
+            </section>
 
-    <main>
-        <section id="sobre-mi">
-            <h2>Presentación Personal</h2>
-            <br>
-            <img src="img/avatar.png" alt="Avatar de desarrollador" width="200">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam velit quo nihil, mollitia, temporibus
-                sapiente explicabo neque expedita rem dolorem dolores fuga recusandae dicta. Ullam, similique rem!
-                Saepe, fuga. Fugit?</i></p>
-        </section>
+            <section id="tarjetas">
+                <h2>Mis Proyectos</h2>
+                <div class="contenedor-grid">
+                    <article class="tarjeta">
+                        <img src="img/duploladua.jpg" alt="Duplo la Dúa">
+                        <h3>Duplo la Dúa</h3>
+                        <p>Duo electro-acustico de la ciudad de Rosario.<br>Con inspiraciones en la trova rosarina y el sonido del grunge de los 90's.</p>
+                    </article>
+                    <article class="tarjeta">
+                        <img src="img/bluzzarella.jpg" alt="Bluzzarella Blues">
+                        <h3>Bluzzarella Blues</h3>
+                        <p>Banda de Blues de la ciudad de Rosario.<br>Con repertorio de blues propio, clásico y versiones blues de canciones de diversos géneros.</p>
+                    </article>
+                </div>
+            </section>
 
-        <section id="tarjetas">
-            <h2>Mis Proyectos</h2>
-            <!-- TODO Completar con proyectos reales, por ahora dejo esto como ejemplo de tarjetas-->
-            <div class="contenedor-grid">
-                <article class="tarjeta">
-                    <img src="img/p1.jpg" alt="Proyecto X">
-                    <h3>Proyecto X</h3>
-                    <p>lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </article>
-                <article class="tarjeta">
-                    <img src="img/p2.jpg" alt="Proyecto Y">
-                    <h3>Proyecto Y</h3>
-                    <p>lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </article>
-            </div>
-        </section>
-        
-        <section id="habilidades">
-            <h2>Habilidades Técnicas</h2>
-            <table>
-                <tr>
-                    <th>Tecnología</th>
-                    <th>Nivel</th>
-                </tr>
-                <tr>
-                    <td>Java Spring Boot</td>
-                    <td>Avanzando</td>
-                </tr>
-                <tr>
-                    <td>Python</td>
-                    <td>Intermedio</td>
-                </tr>
-                <tr>
-                    <td>C#</td>
-                    <td>Básico</td>
-                </tr>
-                <tr>
-                    <td>Kotlin</td>
-                    <td>Básico</td>
-                </tr>
-                <tr>
-                    <td>Oracle BPM12</td>
-                    <td>Intermedio</td>
-                </tr>
-                <tr>
-                    <td>Angular</td>
-                    <td>Intermedio</td>
-                </tr>
-                <tr>
-                    <td>HTML</td>
-                    <td>Intermedio</td>
-                </tr>
-                <tr>
-                    <td>CSS</td>
-                    <td>Basico</td>
-                </tr>
-            </table>
-        </section>
+            <section id="habilidades">
+                <h2>Habilidades Técnicas</h2>
+                <table>
+                    <tr>
+                        <th>Tecnología</th>
+                        <th>Nivel</th>
+                    </tr>
+                    <tr>
+                        <td>Java Spring Boot</td>
+                        <td>Avanzando</td>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>Intermedio</td>
+                    </tr>
+                    <tr>
+                        <td>C#</td>
+                        <td>Básico</td>
+                    </tr>
+                    <tr>
+                        <td>Kotlin</td>
+                        <td>Básico</td>
+                    </tr>
+                    <tr>
+                        <td>Oracle BPM12</td>
+                        <td>Intermedio</td>
+                    </tr>
+                    <tr>
+                        <td>Angular</td>
+                        <td>Intermedio</td>
+                    </tr>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Intermedio</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>Basico</td>
+                    </tr>
+                </table>
+            </section>
 
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <form action="#">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-                
-                <label for="apellido">Apellido:</label>
-                <input type="text" id="apellido" name="apellido" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+            <section id="contacto">
+                <h2>Contacto</h2>
+                <form action="#">
+                    <!-- Aquí se podría agregar acción real al formulario, por ahora solo serán ejemplo de campos-->
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
 
-                <button type="submit">Enviar Mensaje</button>
-            </form>
-        </section>
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" required>
 
-        <section id="peliculas">
-            <div class="contenedor-grid">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="texto">Texto:</label>
+                    <textarea id="texto" name="texto" required></textarea>
+
+                    <button type="submit">Enviar Mensaje</button>
+                </form>
+            </section>
+
+            <section id="peliculas">
                 <h2>Películas Favoritas</h2>
-                <!-- TODO Analizar mejor forma de mostrar películas, por ahora copio tarjetas de proyectos-->
-                <article class="tarjeta">
-                    <img src="img/p1.jpg" alt="Proyecto X">
-                    <h3>Proyecto X</h3>
-                    <p>lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </article>
-                <article class="tarjeta">
-                    <img src="img/p2.jpg" alt="Proyecto Y">
-                    <h3>Proyecto Y</h3>
-                    <p>lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </article>
+                <div class="contenedor-grid peliculas-grid">
+                    <article class="tarjeta">
+                        <a href="https://letterboxd.com/film/goodfellas/" _blank><img src="img/goodfellas.jpg" alt="Goodfellas"></a>
+                        <h3>GoodFellas - Martin Scorsese</h3>
+                        <p>lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </article>
+                    <article class="tarjeta">
+                        <a href="https://letterboxd.com/film/12-monkeys/" _blank><img src="img/12monkeys.jpg" alt="12 Monkeys"></a>
+                        <h3>12 Monkeys - Terry Gilliam</h3>
+                        <p>lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </article>
+                    <article class="tarjeta">
+                        <a href="https://letterboxd.com/film/amarcord/" _blank><img src="img/amarcord.jpg" alt="Amarcord"></a>
+                        <h3>Amarcord - Federico Fellini</h3>
+                        <p>lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 - Mi Portafolio Personal</p>
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/lucio-gramaccioni/" _blank> LinkedIn</a>
+                <a href="https://github.com/luciograma/PFO-01-FrontEnd/" _blank>GitHub</a>
+                <a href="https://www.letterboxd.com/luciograma/" _blank>Letterboxd</a>
             </div>
-        </section>
-    </main>
+        </footer>
 
-    <footer>
-        <p>&copy; 2026 - Mi Portafolio Personal</p>
-        <div class="redes">
-            <a href="https://www.linkedin.com/in/lucio-gramaccioni/">LinkedIn</a>
-            <a href="https://github.com/luciograma/PFO-01-FrontEnd/">GitHub</a>
-        </div>
-    </footer>
-
-</body>
+    </body>
 
 </html>
