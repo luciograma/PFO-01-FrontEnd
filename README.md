@@ -43,12 +43,12 @@ Respuesta: La sección de tarjetas se ajustan automaticamente de manera flexible
 rem, vh).
 [X] Se ha implementado al menos una animación o transición (por ejemplo, efecto hover en
 tarjetas o botones).
-[ ] Redacta: ¿Qué animación o transición implementaste y por qué consideraste que era
+[X] Redacta: ¿Qué animación o transición implementaste y por qué consideraste que era
 adecuada para tu proyecto?
-Respuesta: ________________________________________________________
+Respuesta: Usé una transición de "transform" y "box-shadow" con efecto "hover" para que haya una respuesta visual al posicionar el mouse destacando el contenido y añadiendo una leve rotación en el caso de las peliculas.
 
 • Consideraciones Adicionales:
-[ ] El diseño es responsivo y se visualiza correctamente en distintos dispositivos.
+[X] El diseño es responsivo y se visualiza correctamente en distintos dispositivos.
 [X] Se aplicaron buenas prácticas de accesibilidad (por ejemplo, uso adecuado de atributos alt en
 las imágenes).
 [ ] Se añadieron comentarios adicionales donde se describan decisiones de diseño o la lógica de

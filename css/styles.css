@@ -1,3 +1,7 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
 :root {
     --color-primario: #2c3e50;
     --color-secundario: #3498db;
@@ -86,9 +90,15 @@ h2 {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.tarjeta:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+#tarjetas .tarjeta:hover {
+    transform: translateY(-10px) scale(1.05); /*se agrega movimiento hacia arriba y aumento de tamaño al hacer hover*/
+    box-shadow: 0 12px 24px rgba(0,0,0,0.25);
+}
+
+#peliculas .tarjeta:hover {
+    transform: rotate(3deg) scale(1.03); /*se agrega una leve rotación y aumento de tamaño al hacer hover*/
+    box-shadow: 0 8px 16px rgba(52, 152, 219, 0.3);
+    opacity: 0.95;
 }
 
 .tarjeta img {
@@ -152,16 +162,24 @@ img {
     height: auto;
 }
 
+.contenedor-texto-avatar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.texto-presentacion {
+    flex: 1;
+}
+
 .avatar-img {
-    float: right;
+    flex-shrink: 0;
     width: 180px;
     height: 180px;
     border-radius: 50%;
     border: 3px solid var(--color-secundario);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     object-fit: cover;
-    margin-left: 20px;
-    margin-bottom: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -170,12 +188,14 @@ img {
     box-shadow: 0 6px 16px rgba(52, 152, 219, 0.3);
 }
 
-/* Responsive para el avatar */
 @media (max-width: 768px) {
+    .contenedor-texto-avatar {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
     .avatar-img {
-        float: none;
-        display: block;
-        margin: 0 auto 20px;
+        order: -1;
         width: 120px;
         height: 120px;
     }
