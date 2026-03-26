@@ -18,7 +18,7 @@ Checklist - Práctica Formativa Obligatoria 1
 [X] Enlace a Google Fonts incluido en la sección "head" del HTML.
 [X] La tipografía importada se aplica en el sitio.
 [X] Redacta brevemente tu decisión: ¿Por qué elegiste esa fuente?
-Respuesta: Al ser usuario de Android es una fuente que me resulta familiar, moderna y minimalista.
+Respuesta: Utilicé la fuente "Roboto" ya que, al ser usuario de Android, es una fuente que me resulta familiar, moderna y minimalista.
 
 • HTML:
 [X] El documento inicia con la declaración DOCTYPE y usa el atributo lang="es".
@@ -27,7 +27,7 @@ Respuesta: Al ser usuario de Android es una fuente que me resulta familiar, mode
 [X] Se han vinculado correctamente el archivo CSS y el enlace a Google Fonts.
 Secciones obligatorias en "main":
 [X] Barra de navegación ("nav") presente y contiene al menos 3 enlaces.
-[ ] Se han insertado al menos 4 comentarios explicativos en el código HTML.
+[X] Se han insertado al menos 4 comentarios explicativos en el código HTML.
 • CSS:
 [X] Existe el archivo "styles.css" con estilos personalizados.
 [X] Se utilizan selectores basados en clases e identificadores.
@@ -35,7 +35,7 @@ Secciones obligatorias en "main":
 Layout y Organización:
 [X] Se ha organizado el layout (especialmente en la sección "tarjetas") utilizando Flexbox o Grid.
 [X] Redacta: ¿Qué ventajas encontraste al utilizar Flexbox o Grid en tu proyecto?
-Respuesta: La sección de tarjetas se ajustan automaticamente de manera flexible al diseño responsive.
+Respuesta: En este proyecto utilicé principalmente Flexbox para organizar la barra de navegación y las secciones de tarjetas (proyectos y películas). La principal ventaja fue la facilidad para alinear elementos y lograr que las tarjetas se ajusten automáticamente al ancho de la pantalla usando el atributo "flex-wrap: wrap", permitiendo que el diseño pase de varias columnas a una sola en pantallas más pequeñas.
 
 • Estilización de Componentes:
 [X] Se han personalizado los estilos de tablas, botones, enlaces y formularios.
@@ -51,5 +51,5 @@ Respuesta: Usé una transición de "transform" y "box-shadow" con efecto "hover"
 [X] El diseño es responsivo y se visualiza correctamente en distintos dispositivos.
 [X] Se aplicaron buenas prácticas de accesibilidad (por ejemplo, uso adecuado de atributos alt en
 las imágenes).
-[ ] Se añadieron comentarios adicionales donde se describan decisiones de diseño o la lógica de
+[X] Se añadieron comentarios adicionales donde se describan decisiones de diseño o la lógica de
 implementación.
